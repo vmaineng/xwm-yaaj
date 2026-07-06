@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: var(--void);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-red: var(--red);
+  --color-red-deep: var(--red-deep);
+  --color-red-glow: var(--red-glow);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+
+  --font-display: var(--font-anton);
+  --font-body: var(--font-grotesk);
+  --font-mono: var(--font-jbmono);
+
+  --animate-marquee: scrollLeft 26s linear infinite;
+  --animate-pulse2: pulse2 2s infinite;
+  --animate-scan: scan 4s infinite;
+  --animate-glitchTop: glitchTop 4.5s infinite linear alternate-reverse;
+  --animate-glitchBot: glitchBot 3.2s infinite linear alternate-reverse;
+}
+
+:root {
+  --void: #0a0908;
+  --surface: #141010;
+  --surface-2: #1c1615;
+  --ink: #f2efea;
+  --muted: #8a8378;
+  --line: #2a211f;
+  --red: #e11b22;
+  --red-deep: #6e0f13;
+  --red-glow: #ff2b34;
+
+  --hero-gradient:
+    radial-gradient(
+      ellipse 80% 60% at 50% 20%,
+      rgba(110, 15, 19, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 80%,
+      rgba(225, 27, 34, 0.12),
+      transparent 70%
+    ),
+    var(--void);
+
+  --booking-gradient: linear-gradient(160deg, #6e0f13 0%, #0a0908 65%);
+}
+
+body {
+  background: theme("colors.void");
+  color: theme("colors.ink");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+
+  .light {
+    --void: #faf7f2;
+    --surface: #ffffff;
+    --surface-2: #f1ebe4;
+    --ink: #14100d;
+    --muted: #6b6259;
+    --line: #e4dcd2;
+
+    --hero-gradient:
+      radial-gradient(
+        ellipse 80% 60% at 50% 20%,
+        rgba(200, 30, 36, 0.1),
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 60% 50% at 80% 80%,
+        rgba(225, 27, 34, 0.06),
+        transparent 70%
+      ),
+      var(--void);
+  }
+
+  .force-dark {
+    --void: #0a0908;
+    --surface: #141010;
+    --surface-2: #1c1615;
+    --ink: #f2efea;
+    --muted: #8a8378;
+    --line: #2a211f;
+  }
+}
