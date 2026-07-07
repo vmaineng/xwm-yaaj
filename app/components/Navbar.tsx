@@ -19,8 +19,8 @@ export default function Navbar() {
       <a href="#top" className="font-display text-2xl tracking-wide">
         XY
       </a>
-      <nav className="hidden md:block">
-        <ul className="flex gap-9">
+      <nav className="hidden items-center gap-10 md:flex">
+        <ul className="flex items-center gap-8">
           {NAV_ITEMS.map((l) => (
             <li key={l.href}>
               <a
@@ -32,51 +32,49 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li className="flex items-center">
-            <button
-              onClick={toggleTheme}
-              aria-label={
-                theme === "dark"
-                  ? "Switch to light mode"
-                  : "Switch to dark mode"
-              }
-              className="flex h-9 w-9 shrink-0 items-center justify-center border border-line text-muted transition-colors hover:border-red hover:text-red"
-            >
-              {theme === "dark" ? (
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <circle cx="12" cy="12" r="4" />
-                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-                </svg>
-              ) : (
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-                </svg>
-              )}
-            </button>
-          </li>
-          <li>
-            <a
-              href="#booking"
-              className="border border-red px-4 py-2 text-[0.75rem] uppercase tracking-[0.14em] transition-colors hover:bg-red"
-            >
-              Booking
-            </a>
-          </li>
         </ul>
+        <div className="flex items-center">
+          <button
+            onClick={toggleTheme}
+            aria-label={
+              theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+            }
+            className="flex h-9 w-9 shrink-0 items-center justify-center border border-line text-muted transition-colors hover:border-red hover:text-red"
+          >
+            {theme === "dark" ? (
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+              </svg>
+            ) : (
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            )}
+          </button>
+        </div>
+        <div>
+          <a
+            href="#booking"
+            className="border border-red px-4 py-2 text-[0.75rem] uppercase tracking-[0.14em] transition-colors hover:bg-red"
+          >
+            Booking
+          </a>
+        </div>
       </nav>
 
       <div className="flex items-center gap-4 md:hidden">

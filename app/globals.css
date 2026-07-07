@@ -33,6 +33,9 @@
   --red-deep: #6e0f13;
   --red-glow: #ff2b34;
 
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
   --hero-gradient:
     radial-gradient(
       ellipse 80% 60% at 50% 20%,
@@ -49,45 +52,38 @@
   --booking-gradient: linear-gradient(160deg, #6e0f13 0%, #0a0908 65%);
 }
 
+.light {
+  --void: #faf7f2;
+  --surface: #ffffff;
+  --surface-2: #f1ebe4;
+  --ink: #14100d;
+  --muted: #6b6259;
+  --line: #e4dcd2;
+
+  --hero-gradient:
+    radial-gradient(
+      ellipse 80% 60% at 50% 20%,
+      rgba(200, 30, 36, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 50% at 80% 80%,
+      rgba(225, 27, 34, 0.06),
+      transparent 70%
+    ),
+    var(--void);
+}
+
+.force-dark {
+  --void: #0a0908;
+  --surface: #141010;
+  --surface-2: #1c1615;
+  --ink: #f2efea;
+  --muted: #8a8378;
+  --line: #2a211f;
+}
+
 body {
   background: theme("colors.void");
   color: theme("colors.ink");
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-
-  .light {
-    --void: #faf7f2;
-    --surface: #ffffff;
-    --surface-2: #f1ebe4;
-    --ink: #14100d;
-    --muted: #6b6259;
-    --line: #e4dcd2;
-
-    --hero-gradient:
-      radial-gradient(
-        ellipse 80% 60% at 50% 20%,
-        rgba(200, 30, 36, 0.1),
-        transparent 60%
-      ),
-      radial-gradient(
-        ellipse 60% 50% at 80% 80%,
-        rgba(225, 27, 34, 0.06),
-        transparent 70%
-      ),
-      var(--void);
-  }
-
-  .force-dark {
-    --void: #0a0908;
-    --surface: #141010;
-    --surface-2: #1c1615;
-    --ink: #f2efea;
-    --muted: #8a8378;
-    --line: #2a211f;
-  }
 }
