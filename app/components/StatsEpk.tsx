@@ -25,15 +25,14 @@ export default function StatsEpk() {
 
       <Reveal className="mt-14 grid grid-cols-1 items-start gap-16 md:grid-cols-[1fr_1.3fr]">
         <div className="relative flex aspect-4/5 items-center justify-center overflow-hidden border border-line bg-linear-to-br from-surface-2 to-void">
-          <span className="font-mono text-xs uppercase tracking-wide text-muted">
-            <Image
-              src="/xy.jpg"
-              height={600}
-              width={600}
-              alt="XY"
-              className="h-auto w-full object-cover"
-            />
-          </span>
+          <Image
+            src="/xy.jpg"
+            height={800}
+            width={800}
+            alt="XY"
+            className="h-auto w-full object-cover"
+          />
+
           <div className="scan-line absolute" />
         </div>
         <div>
