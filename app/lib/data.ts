@@ -23,9 +23,9 @@ export const discography: Track[] = [
 ];
 
 export const videos: Video[] = [
-  { title: "STATIC (Official Video)", meta: "3.2M views" },
-  { title: "RED ROOM (Visualizer)", meta: "1.1M views" },
-  { title: "Studio Session — Ep. 1", meta: "640K views" },
+  { title: "For The Gang", meta: "37K views" , youtubeId: "rWTsVnDrryU"},
+  { title: "No Tomorrow", meta: "14K views", youtubeId: "_2FrzZA5hdg" },
+  { title: "Any Minute", meta: "10K views", youtubeId: "xEVD9i8_wQ0" },
 ];
 
 export const tourDates: TourDate[] = [
@@ -35,9 +35,8 @@ export const tourDates: TourDate[] = [
 ];
 
 export const socials = [
-  { label: "Instagram", href: "#" },
-  { label: "TikTok", href: "#" },
-  { label: "YouTube", href: "#" },
-  { label: "Spotify", href: "#" },
-  { label: "X", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/xwmyaajmusic/" },
+  { label: "TikTok", href: "https://www.tiktok.com/@xwmyaajmusic" },
+  { label: "YouTube", href: "https://www.youtube.com/@xwmyaajmusic" },
+  { label: "Facebook", href: "https://www.facebook.com/XwmYaajMusic" },
 ];
