@@ -44,7 +44,7 @@
     ),
     radial-gradient(
       ellipse 60% 50% at 80% 80%,
-      rgba(225, 27, 34, 0.12),
+      rgba(225, 27, 34, 0.12),`
       transparent 70%
     ),
     var(--void);
@@ -72,16 +72,15 @@
       transparent 70%
     ),
     var(--void);
+
+    --booking-gradient: linear-gradient(
+    160deg,
+    rgba(225, 27, 34, 0.08) 0%,
+    var(--void) 65%
+  );
 }
 
-.force-dark {
-  --void: #0a0908;
-  --surface: #141010;
-  --surface-2: #1c1615;
-  --ink: #f2efea;
-  --muted: #8a8378;
-  --line: #2a211f;
-}
+
 
 body {
   background: theme("colors.void");

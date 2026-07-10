@@ -61,7 +61,7 @@ export default function Booking() {
   return (
     <section
       id="booking"
-      className="force-dark border-y border-line px-[5vw] py-28 text-center"
+      className="border-y border-line px-[5vw] py-28 text-center"
       style={{
         background: "var(--booking-gradient)",
       }}
