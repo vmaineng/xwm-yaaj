@@ -101,19 +101,19 @@ export default function Booking() {
             name="name"
             required
             placeholder="Your name"
-            className="border border-line bg-transparent px-4 py-3 text-sm outline-none focus:border-red"
+            className="border border-line bg-transparent px-4 py-3 text-sm text-ink outline-none placeholder:text-muted focus:border-red"
           />
           <input
             name="email"
             type="email"
             required
             placeholder="Your email"
-            className="border border-line bg-transparent px-4 py-3 text-sm outline-none focus:border-red"
+            className="border border-line bg-transparent px-4 py-3 text-sm text-ink outline-none placeholder:text-muted focus:border-red"
           />
           <select
             name="inquiry_type"
             defaultValue="management"
-            className="border border-line bg-transparent px-4 py-3 text-sm outline-none focus:border-red"
+            className="border border-line bg-transparent px-4 py-3 text-sm text-ink outline-none placeholder:text-muted focus:border-red"
           >
             <option value="booking">Live / Booking</option>
             <option value="management">Deals / Management</option>
@@ -124,7 +124,7 @@ export default function Booking() {
             required
             rows={4}
             placeholder="Tell us about your opportunity..."
-            className="border border-line bg-transparent px-4 py-3 text-sm outline-none focus:border-red"
+            className="border border-line bg-transparent px-4 py-3 text-sm text-ink outline-none placeholder:text-muted focus:border-red"
           />
           <button
             type="submit"

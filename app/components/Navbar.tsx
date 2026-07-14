@@ -4,10 +4,9 @@ import { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 
 const NAV_ITEMS = [
+  { label: "Press", href: "#press" },
   { label: "Music", href: "#music" },
   { label: "Videos", href: "#videos" },
-  { label: "Tour", href: "#tour" },
-  { label: "Press", href: "#press" },
 ];
 
 export default function Navbar() {
@@ -17,9 +16,9 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 flex items-center justify-between bg-linear-to-b from-void/95 to-transparent px-[5vw] py-5 backdrop-blur-[2px] ">
       <a href="#top" className="font-display text-2xl tracking-wide">
-        XY
+        XWM YAAJ
       </a>
-      <nav className="hidden items-center gap-10 md:flex">
+      <nav className="hidden items-center gap-6 md:flex">
         <ul className="flex items-center gap-8">
           {NAV_ITEMS.map((l) => (
             <li key={l.href}>
@@ -33,13 +32,21 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <div>
+          <a
+            href="#booking"
+            className="border border-red px-2 py-2 text-[0.75rem] uppercase tracking-[0.14em] transition-colors hover:bg-red"
+          >
+            Booking
+          </a>
+        </div>
         <div className="flex items-center">
           <button
             onClick={toggleTheme}
             aria-label={
               theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
             }
-            className="flex h-9 w-9 shrink-0 items-center justify-center border border-line text-muted transition-colors hover:border-red hover:text-red"
+            className="flex h-8 w-8 shrink-0 items-center justify-center border border-line text-muted transition-colors hover:border-red hover:text-red"
           >
             {theme === "dark" ? (
               <svg
@@ -66,14 +73,6 @@ export default function Navbar() {
               </svg>
             )}
           </button>
-        </div>
-        <div>
-          <a
-            href="#booking"
-            className="border border-red px-4 py-2 text-[0.75rem] uppercase tracking-[0.14em] transition-colors hover:bg-red"
-          >
-            Booking
-          </a>
         </div>
       </nav>
 

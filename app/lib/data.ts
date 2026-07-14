@@ -36,7 +36,7 @@ export const tourDates: TourDate[] = [
 
 export const socials = [
   { label: "Instagram", href: "https://www.instagram.com/xwmyaajmusic/" },
-  { label: "TikTok", href: "https://www.tiktok.com/@xwmyaajmusic" },
+  { label: "TikTok", href: "https://www.tiktok.com/@xwmyaaj" },
   { label: "YouTube", href: "https://www.youtube.com/@xwmyaajmusic" },
   { label: "Facebook", href: "https://www.facebook.com/XwmYaajMusic" },
 ];
