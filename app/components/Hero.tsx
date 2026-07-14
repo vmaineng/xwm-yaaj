@@ -53,40 +53,41 @@ export default function Hero() {
         </div>
 
         <div className="relative z-10 mt-16 h-[60vh] w-full md:mt-0 md:h-[80vh] md:w-[45%]">
-          {/* Photo 1 — large anchor, top-left */}
           <div className="absolute left-0 top-[4%] z-10 h-[58%] w-[56%] -rotate-8 overflow-hidden rounded-sm shadow-2xl shadow-black/60 ring-1 ring-white/10 transition duration-500 hover:z-50 hover:rotate-0">
             <Image
               src="/xy.jpg"
               alt="XWM YAAJ"
               fill
               priority
-              className="object-cover"
+              className="object-cover object-[center_15%]"
             />
           </div>
 
-          {/* Photo 2 — smaller, top-right */}
           <div className="absolute right-0 top-0 z-20 h-[50%] w-[58%] rotate-4 overflow-hidden rounded-sm shadow-2xl shadow-black/60 ring-1 ring-white/10 transition duration-500 hover:z-50 hover:rotate-0">
             <Image
               src="/sum.jpg"
               alt="XWM YAAJ"
               fill
-              className="object-cover"
+              className="object-cover object-[center_10%]"
             />
           </div>
 
-          {/* Photo 4 — small accent, tucked bottom-left, pops forward */}
-          <div className="absolute bottom-[6%] left-0 z-30 h-[50%] w-[59%] rotate-8 overflow-hidden rounded-sm shadow-2xl shadow-black/70 ring-1 ring-white/10 transition duration-500 hover:z-50 hover:rotate-0">
+          <div className="absolute bottom-[6%] left-0 z-30 h-[50%] w-[59%] rotate-10 overflow-hidden rounded-sm shadow-2xl shadow-black/70 ring-1 ring-white/10 transition duration-500 hover:z-50 hover:rotate-0">
             <Image
               src="/xyz.jpg"
               alt="XWM YAAJ"
               fill
-              className="object-cover"
+              className="object-cover object-[center_10%]"
             />
           </div>
 
-          {/* Photo 3 — largest of the bottom pair, front-most */}
           <div className="absolute bottom-0 right-0 z-40 h-[52%] w-[52%] -rotate-3 overflow-hidden rounded-sm shadow-2xl shadow-black/60 ring-1 ring-white/10 transition duration-500 hover:z-50 hover:rotate-0">
-            <Image src="/x.jpg" alt="XWM YAAJ" fill className="object-cover" />
+            <Image
+              src="/x.jpg"
+              alt="XWM YAAJ"
+              fill
+              className="object-cover object-[center_20%]"
+            />
           </div>
 
           <div
