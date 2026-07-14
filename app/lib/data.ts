@@ -1,10 +1,10 @@
 import { Stat, Track, Video, TourDate } from "../types/index";
 
 export const stats: Stat[] = [
-  { value: "2.4M", label: "Monthly Listeners" },
-  { value: "180K", label: "Instagram / TikTok" },
+  { value: "2.4K", label: "Monthly Listeners" },
+  { value: "800", label: "Instagram / Facebook" },
   { value: "14", label: "Releases" },
-  { value: "3", label: "Sync Placements" },
+  { value: "7", label: "Music Videos" },
 ];
 
 export const bio = {
@@ -16,10 +16,10 @@ export const bio = {
 };
 
 export const discography: Track[] = [
-  { index: "01", title: "Static", meta: "EP · 2026", href: "#" },
-  { index: "02", title: "Red Room", meta: "Mixtape · 2025", href: "#" },
-  { index: "03", title: "Midnight Dialect", meta: "Single · 2025", href: "#" },
-  { index: "04", title: "No Translation", meta: "Single · 2024", href: "#" },
+  { index: "01", title: "On the Block", meta: "EP · 2026", href: "https://www.youtube.com/watch?v=79mUwi8REo0" },
+  { index: "02", title: "Don't Sweat It", meta: "Single · 2026", href: "https://www.youtube.com/watch?v=x2yM6l2EI9o" },
+  { index: "03", title: "Outside", meta: "Music Video · 2025", href: "https://www.youtube.com/watch?v=mr2WFaDWIbY" },
+  { index: "04", title: "1000", meta: "Single · 2024", href: "https://www.youtube.com/watch?v=zwcdt4GpRG4" },
 ];
 
 export const videos: Video[] = [

@@ -44,7 +44,7 @@
     ),
     radial-gradient(
       ellipse 60% 50% at 80% 80%,
-      rgba(225, 27, 34, 0.12),`
+      rgba(225, 27, 34, 0.12),
       transparent 70%
     ),
     var(--void);
@@ -85,4 +85,12 @@
 body {
   background: theme("colors.void");
   color: theme("colors.ink");
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--red);
 }

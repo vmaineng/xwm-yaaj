@@ -33,7 +33,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-md text-base text-white/60 md:text-lg">
-            New tape out now. Streaming everywhere.
+            New Music out now. Streaming everywhere.
           </p>
 
           <div className="mt-8 flex items-center gap-4">

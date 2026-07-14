@@ -9,10 +9,7 @@ export default function Discograph() {
         <h2 className="mt-2.5 font-display text-[clamp(1.8rem,4vw,2.6rem)] uppercase leading-none">
           Music
         </h2>
-        <p className="mt-4 leading-relaxed text-muted">
-          Streaming everywhere. Replace links below with your live Spotify /
-          Apple Music / YouTube Music URLs.
-        </p>
+        <p className="mt-4 leading-relaxed text-muted">Streaming everywhere.</p>
       </Reveal>
 
       <Reveal className="border-t border-line">
@@ -32,7 +29,7 @@ export default function Discograph() {
               href={track.href}
               className="col-start-2 w-fit border border-line px-4 py-2 text-[0.72rem] uppercase tracking-[0.12em] text-muted transition-colors hover:border-red hover:text-red md:col-auto md:w-auto"
             >
-              Stream / Download
+              Stream
             </a>
           </div>
         ))}
