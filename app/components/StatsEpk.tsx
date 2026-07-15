@@ -45,7 +45,10 @@ export default function StatsEpk() {
               {p}
             </p>
           ))}
-          <a href="#booking" className="btn btn-outline mt-2">
+          <a
+            href="#booking"
+            className="mt-2 inline-flex items-center gap-2 rounded-full bg-red px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.08em] text-void shadow-[0_0_24px_-6px_var(--red-glow)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-red-glow hover:shadow-[0_0_32px_-4px_var(--red-glow)]"
+          >
             Book / Contact today!
           </a>
         </div>

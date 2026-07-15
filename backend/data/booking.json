@@ -1,0 +1,34 @@
+[
+  {
+    "id": "e1311925-0f4f-4ae0-b48f-2e14ad9dba84",
+    "name": "test",
+    "email": "test@email.com",
+    "inquiry_type": "management",
+    "message": "test",
+    "submitted_at": "2026-07-15T00:08:54.325026+00:00"
+  },
+  {
+    "id": "0c117dfa-812c-44b0-b972-7866e89b3939",
+    "name": "test",
+    "email": "test@gmail.com",
+    "inquiry_type": "management",
+    "message": "test",
+    "submitted_at": "2026-07-15T00:11:48.642144+00:00"
+  },
+  {
+    "id": "fc172747-2a2c-4028-9e86-65379352ef52",
+    "name": "test",
+    "email": "test@email.com",
+    "inquiry_type": "management",
+    "message": "test",
+    "submitted_at": "2026-07-15T00:37:58.741867+00:00"
+  },
+  {
+    "id": "bd81a4da-15f3-4753-87a5-73b50bf1b39f",
+    "name": "test",
+    "email": "test@email.com",
+    "inquiry_type": "management",
+    "message": "test",
+    "submitted_at": "2026-07-15T00:39:10.658039+00:00"
+  }
+]

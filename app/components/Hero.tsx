@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-svh flex-col overflow-hidden px-[6vw] pb-16 pt-24 md:flex-row md:items-center md:px-[8vw] md:pt-10 lg:px-[10vw]"
+      className="relative flex min-h-svh flex-col overflow-hidden px-[6vw] pb-16 pt-30 md:flex-row md:items-center md:px-[8vw] md:pt-10 lg:px-[10vw]"
       style={{ background: "var(--hero-gradient)" }}
     >
       <div
@@ -18,7 +18,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 mx-auto flex w-full max-w-360 flex-col md:flex-row md:items-center">
-        <div className="flex flex-col items-start text-left md:w-[55%] md:pr-10">
+        <div className="flex flex-col items-start text-left md:w-[49%] md:pr-8">
           <div className="eyebrow mb-6">
             Underground · Independent · Unfiltered
           </div>

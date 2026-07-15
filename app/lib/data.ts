@@ -1,4 +1,4 @@
-import { Stat, Track, Video, TourDate } from "../types/index";
+import { Stat, Track, Video } from "../types/index";
 
 export const stats: Stat[] = [
   { value: "2.4K", label: "Monthly Listeners" },
@@ -26,12 +26,6 @@ export const videos: Video[] = [
   { title: "For The Gang", meta: "37K views" , youtubeId: "rWTsVnDrryU"},
   { title: "No Tomorrow", meta: "14K views", youtubeId: "_2FrzZA5hdg" },
   { title: "Any Minute", meta: "10K views", youtubeId: "xEVD9i8_wQ0" },
-];
-
-export const tourDates: TourDate[] = [
-  { date: "AUG 14, 2026", city: "Los Angeles, CA", venue: "The Fonda Theatre", status: "soon" },
-  { date: "SEP 02, 2026", city: "Atlanta, GA", venue: "The Masquerade", status: "on-sale" },
-  { date: "SEP 20, 2026", city: "New York, NY", venue: "Irving Plaza", status: "on-sale" },
 ];
 
 export const socials = [

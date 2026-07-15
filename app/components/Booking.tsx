@@ -13,19 +13,19 @@ const contacts: {
 }[] = [
   {
     label: "Booking /Live",
-    email: "booking@xwmyaaj.com",
+    email: "xwmyaajplus@gmail.com",
     role: "Live shows, festivals, tour support",
     type: "booking",
   },
   {
     label: "Management",
-    email: "management@xwmyaaj.com",
+    email: "xwmyaajplus@gmail.com",
     role: "Deals, partnerships, general inquiries",
     type: "management",
   },
   {
     label: "Press",
-    email: "press@xwmyaaj.com",
+    email: "xwmyaajplus@gmail.com",
     role: "Interviews, features, press kit requests",
     type: "press",
   },
@@ -39,7 +39,8 @@ export default function Booking() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const form = new FormData(e.currentTarget);
+    const formEl = e.currentTarget;
+    const form = new FormData(formEl);
     const payload: BookingPayload = {
       name: form.get("name") as string,
       email: form.get("email") as string,
@@ -50,7 +51,7 @@ export default function Booking() {
     try {
       await submitBookingInquiry(payload);
       setStatus("sent");
-      e.currentTarget.reset();
+      formEl.reset();
     } catch (error) {
       console.error("Error submitting form:", error);
       setErrorMsg("There was an error sending your message. Please try again.");
@@ -82,7 +83,7 @@ export default function Booking() {
           <div key={contact.label} className="bg-void p-8">
             <div className="eyebrow mb-2.5"> {contact.label}</div>
             <a
-              href={`mailto${contact.email}`}
+              href={`mailto:${contact.email}`}
               className="text-[0.95rem] text-ink"
             >
               {contact.email}
