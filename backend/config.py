@@ -18,4 +18,5 @@ BOOKING_FILE = DATA_DIR / "booking.json"
 CORS_ORIGINS = [
     "http://localhost:3000",
     "https://xwmyaaj.com",
+    "https://xwm-yaaj.vercel.app/",
 ]
