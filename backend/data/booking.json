@@ -30,5 +30,29 @@
     "inquiry_type": "management",
     "message": "test",
     "submitted_at": "2026-07-15T00:39:10.658039+00:00"
+  },
+  {
+    "id": "2e2bb317-700c-4ccb-9214-62077108f49d",
+    "name": "test",
+    "email": "test@email.com",
+    "inquiry_type": "management",
+    "message": "test@email.com",
+    "submitted_at": "2026-07-15T20:56:04.784269+00:00"
+  },
+  {
+    "id": "8d1de61b-c95c-43ea-a508-35cce2eb53cc",
+    "name": "test",
+    "email": "test@email.com",
+    "inquiry_type": "management",
+    "message": "test",
+    "submitted_at": "2026-07-15T21:00:13.824483+00:00"
+  },
+  {
+    "id": "eb3fbf41-b726-4bcf-974a-1d52fe076680",
+    "name": "test",
+    "email": "test@gmail.com",
+    "inquiry_type": "management",
+    "message": "test",
+    "submitted_at": "2026-07-15T21:01:26.435406+00:00"
   }
 ]
