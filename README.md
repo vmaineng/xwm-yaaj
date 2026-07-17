@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# XWM YAAJ
 
-## Getting Started
+Portfolio site for the artist XWM YAAJ, with a booking/inquiry system for booking, management, and press requests.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Frontend:** Next.js 14, TypeScript, Tailwind CSS v4
+- **Backend:** FastAPI (Python), Resend for email notifications
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Hosting
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend:** [Vercel](https://vercel.com)
+- **Backend:** [Render](https://render.com) — live at `https://xwm-yaaj.onrender.com`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## What it does
 
-## Learn More
+Visitors submit a booking, management, or press inquiry through a form on the site. The backend validates the submission, saves it, and sends an email notification via Resend so inquiries don't get missed.
 
-To learn more about Next.js, take a look at the following resources:
+## One thing I learned
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Python's module resolution depends entirely on *where* you run a command from, not just how your files are organized on disk. Absolute imports like `from backend.config import ...` only resolve if the parent of `backend/` is on `sys.path` — which changes depending on whether you run `uvicorn` directly, `python -m uvicorn`, or from inside vs. outside the `backend/` folder. The same issue showed up locally, in tests, and again on Render, each time needing the working directory and the entrypoint (`backend.main:app` vs. `main:app`) to agree with each other.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## One thing I hope to add next time
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Right now, submitted inquiries are stored in a local `data/booking.json` file. On Render's free tier, that file gets wiped on every redeploy since the filesystem is ephemeral — so real submissions could silently disappear. Next, I want to migrate storage to Render's free PostgreSQL database so inquiry data actually persists.
